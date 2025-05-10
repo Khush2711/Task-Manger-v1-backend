@@ -99,12 +99,6 @@ exports.signup = async (req, res) => {
         //console.log("request body", req.body);
 
         if (!firstName || !lastName || !email || !password || !confirmPassword || !otp) {
-            //console.log(firstName,
-                lastName,
-                email,
-                password,
-                confirmPassword,
-                otp)
             return res.status(403).json({
                 success: false,
                 message: `All fileds are required`
